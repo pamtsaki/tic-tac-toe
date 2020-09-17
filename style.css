@@ -1,0 +1,48 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 150px);
+  grid-template-rows: repeat(3, 150px);
+  justify-content: center;
+  align-items: stretch;
+}
+
+.container .game-cell {
+  height: 150px;
+  width: 150px;
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.game-cell .cell-content {
+  color: black;
+  font-weight: bold;
+  font-size: 48px;
+}
+
+.results-text {
+  margin-top: 60px;
+  font-size: 48px;
+  font-weight: 500;
+}
